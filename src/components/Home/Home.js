@@ -1,10 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import Banner from '../../images/banner.png'
 import Review from '../Review/Review';
 const Home = () => {
     const [reviews] = useReviews();
     const threeReviews = reviews.slice(0, 3)
+    const navigate = useNavigate()
     return (
         <div>
             <div className='flex flex-col md:flex-row mt-12 '>
@@ -37,6 +39,9 @@ const Home = () => {
                         </Review>)
                     }
                 </div>
+            </div>
+            <div className=' text-center mt-5'>
+                <button onClick={()=>navigate('/reviews')} type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">see all reviews</button>
             </div>
         </div>
 
