@@ -8,7 +8,10 @@ const Dashboard = () => {
             .then(data => setChartData(data))
     }, [])
     return (
-        <div className='md:flex md:justify-center md:w-10/12 mx-auto'>
+       <div>
+           <h3 className=' font-bold text-center text-xl mt-5 mb-5'> monthly sell analysis chart</h3>
+            <div className='md:flex md:justify-center md:w-10/12 mx-auto'>
+            
             <div className='md:flex-1'>
                 <ComposedChart
                     width={500}
@@ -54,6 +57,7 @@ const Dashboard = () => {
                 </AreaChart>
             </div>
         </div>
+       </div>
     );
 };
 export default Dashboard;
