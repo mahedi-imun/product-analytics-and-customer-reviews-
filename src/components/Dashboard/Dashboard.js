@@ -8,7 +8,7 @@ const Dashboard = () => {
             .then(data => setChartData(data))
     }, [])
     return (
-        <div className='md:flex justify-center'>
+        <div className='md:flex md:justify-center md:w-10/12 mx-auto'>
             <div className='md:flex-1'>
                 <ComposedChart
                     width={500}

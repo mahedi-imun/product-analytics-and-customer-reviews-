@@ -14,4 +14,4 @@ Tools :
   * i will use custom hook , because Don't repeat myself
   * product analysis and show customer review
   * have three blogs
-  * make outstanding rechart Analytics
+  * dashboard sell analysis
