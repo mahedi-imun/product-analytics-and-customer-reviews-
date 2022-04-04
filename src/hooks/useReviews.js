@@ -5,7 +5,6 @@ const useReviews = () => {
         fetch('https://mahedi-imun.github.io/user-ratings/reviews.json')
         .then(res => res.json())
         .then(data => setReviews(data) )
-        
     },[])
     return [reviews, setReviews]
 };
