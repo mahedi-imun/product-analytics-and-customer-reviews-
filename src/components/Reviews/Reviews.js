@@ -8,7 +8,7 @@ const Reviews = () => {
             <div className='md:flex flex-wrap justify-around '>
                 {
                     reviews.map(review => <Review
-                        key={review._key}
+                        key={review._id}
                         review={review}
                     ></Review>)
                 }
